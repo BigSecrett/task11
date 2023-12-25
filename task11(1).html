@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Elements Styling</title>
+  <style>
+    /* Basic styles for links */
+    body{
+        background-color: aqua;
+        align-content: right;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px;
+      margin: 5px;
+      border: 1px solid #333;
+      display: inline-block;
+    }
+
+    /* Hover effect */
+    a:hover {
+      background-color: #eee;
+      color: #555;
+    }
+
+    /* Active (clicked) effect */
+    a:active {
+      background-color: #ccc;
+      color: #444;
+    }
+
+    /* Focus effect (for keyboard navigation) */
+    a:focus {
+      outline: 2px solid #333;
+    }
+
+    /* Basic styles for form elements */
+    input, textarea, select {
+      margin: 10px;
+      padding: 5px;
+      border: 1px solid #333;
+      display: block;
+    }
+
+    /* Hover effect for form elements */
+    input:hover, textarea:hover, select:hover {
+      background-color: #bed23a;
+    }
+
+    /* Active (clicked) effect for form elements */
+    input:active, textarea:active, select:active {
+      background-color: #1c2686;
+    }
+
+    /* Focus effect for form elements */
+    input:focus, textarea:focus, select:focus {
+      outline: 2px solid #302626;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Interactive Elements Styling</h1>
+
+  <!-- Links -->
+  <p>Links:</p>
+  <a href="#">Normal Link</a>
+  <a href="#" target="_blank">Link with Target</a>
+  <a href="#" class="external-link">External Link</a>
+
+  <!-- Form Elements -->
+  <p>Form Elements:</p>
+  <form >
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments"></textarea>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="india">India</option>
+      <option value="us">United States</option>
+      <option value="ca">Canada</option>
+      <option value="uk">United Kingdom</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Box</title>
+  <style>
+    /* Styled Box */
+    body{
+        background-color: rgb(148, 207, 207);
+    }
+    .styled-box {
+      width: 300px;
+      padding: 20px;
+      margin: 20px;
+      border-width: 2px;
+      border-style: solid;
+      border-color: #333;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    /* Different Border Style for Top */
+    .styled-box.top-border {
+      border-top-style: dashed;
+      background-color: rgba(149, 255, 0, 0.273);
+    }
+
+    /* Different Border Style for Right */
+    .styled-box.right-border {
+      border-right-style: dotted;
+      background-color: rgba(236, 208, 172, 0.495);
+    }
+
+    /* Different Border Style for Bottom */
+    .styled-box.bottom-border {
+      border-bottom-style: double;
+      background-color: bisque;
+    }
+
+    /* Different Border Style for Left */
+    .styled-box.left-border {
+      border-left-style: groove;
+      background-color: rgb(255, 153, 0);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Styled Box</h1>
+  <div align="center">
+
+  <!-- Default Styled Box -->
+  <div class="styled-box">
+    <p>This is a styled box with different border properties, margins, and padding.</p>
+  </div>
+
+  <!-- Styled Box with Top Border -->
+  <div class="styled-box top-border">
+    <p>Top border is dashed.</p>
+  </div>
+
+  <!-- Styled Box with Right Border -->
+  <div class="styled-box right-border">
+    <p>Right border is dotted.</p>
+  </div>
+
+  <!-- Styled Box with Bottom Border -->
+  <div class="styled-box bottom-border">
+    <p>Bottom border is double.</p>
+  </div>
+
+  <!-- Styled Box with Left Border -->
+  <div class="styled-box left-border">
+    <p>Left border is groove.</p>
+  </div>
+</div>
+</body>
+</html>
